@@ -27,6 +27,7 @@ import org.apache.flink.annotation.Internal;
  * <p>The split enumerator must implement this interface if it needs to deal with NoMoreSplits event
  * in cases of a subtask can have multiple child sources. e.g. hybrid source.
  */
+// 装饰器接口 signal NoMoreSplits
 @Internal
 public interface SupportsIntermediateNoMoreSplits {
     /**

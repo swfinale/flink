@@ -52,6 +52,7 @@ import java.util.concurrent.CompletableFuture;
  * @param <T> The type of the record emitted by this source reader.
  * @param <SplitT> The type of the source splits.
  */
+// SourceReader - 负责读取记录
 @Public
 public interface SourceReader<T, SplitT extends SourceSplit>
         extends AutoCloseable, CheckpointListener {

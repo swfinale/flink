@@ -30,6 +30,7 @@ import java.util.List;
  * The interface for a split enumerator responsible for discovering the source splits, and assigning
  * them to the {@link SourceReader}.
  */
+// SplitEnumerator - 负责发现source的分片，分配给SourceReader
 @Public
 public interface SplitEnumerator<SplitT extends SourceSplit, CheckpointT>
         extends AutoCloseable, CheckpointListener {

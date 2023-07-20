@@ -476,6 +476,7 @@ public class SourceCoordinatorContext<SplitT extends SourceSplit>
      *
      * @param callable the callable to delegate.
      */
+    // 代理执行callable
     private <V> V callInCoordinatorThread(Callable<V> callable, String errorMessage) {
         // Ensure the split assignment is done by the coordinator executor.
         if (!coordinatorThreadFactory.isCurrentThreadCoordinatorThread()) {

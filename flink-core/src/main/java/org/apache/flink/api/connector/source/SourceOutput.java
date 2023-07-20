@@ -30,6 +30,7 @@ import org.apache.flink.api.common.eventtime.WatermarkOutput;
  * Splits</i>. That way, streams of events from different splits can be identified and treated
  * separately, for example for watermark generation, or event-time skew handling.
  */
+// SourceOutput - 发送记录和watermark的gateway
 @Public
 public interface SourceOutput<T> extends WatermarkOutput {
 

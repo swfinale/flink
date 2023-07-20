@@ -29,6 +29,7 @@ import org.apache.flink.annotation.PublicEvolving;
  * if speculative execution is enabled. Otherwise an error will be thrown when the split enumerator
  * receives a custom source event.
  */
+//SupportsHandleExecutionAttemptSourceEvent - 装饰器接口，允许SplitEnumerator处理SourceEvent
 @PublicEvolving
 public interface SupportsHandleExecutionAttemptSourceEvent {
 
